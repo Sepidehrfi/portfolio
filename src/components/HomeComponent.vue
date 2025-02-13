@@ -4,9 +4,15 @@
       <div
         class="background"
         :data-img-url="`/img/slider/${dark ? 2 : 1}.jpg`"
-      ></div>
-      <div class="container">
-        <div class="content">
+        >
+
+      </div>
+
+      <img src="/img/slider/me.jpg" alt="" /> 
+      
+      <!-- <div class="container"> -->
+      
+        <!-- <div class="content">
           <div class="details">
             <div class="hello">
               <h3 class="orangeText">Hello, I'm</h3>
@@ -50,8 +56,8 @@
           </div>
           <div class="avatar">
             <div class="image">
-              <!-- <img src="/img/slider/avatar.png" alt="" /> -->
-              <span
+              <img src="/img/slider/avatar.png" alt="" /> 
+               <span
                 class="skills illustrator anim_moveBottom"
                 v-html="ai"
               ></span>
@@ -59,8 +65,8 @@
               <span class="skills figma anim_moveBottom" v-html="figma"></span>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
       <div class="dizme_tm_down">
         <a class="anchor" href="#process" v-html="dark ? mouseDark : mouse">
         </a>
