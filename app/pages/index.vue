@@ -1,6 +1,29 @@
 <template>
 	<div>
-		<InspireAuroraBackground class="top-[-4rem]">
+		<!-- <div class="box">
+			<img src="/assets/images/main-pic.jpg" alt="image" width="2000" height="1000" />
+			 
+		</div> -->
+
+
+		 <ClientOnly>
+		   <InspireBlurReveal
+			:delay="0.2"
+			:duration="0.75"
+			class="p-8"
+			>
+			<h2 class="text-3xl font-bold tracking-tighter xl:text-6xl/none sm:text-5xl">Hey there 👋</h2>
+			<span class="text-pretty text-xl tracking-tighter xl:text-4xl/none sm:text-3xl">
+				How is it going?
+            </span>
+          </InspireBlurReveal>
+	   	</ClientOnly>
+
+		<!-- <InspireLampEffect>
+			<span class="font-heading text-6xl">I'm Front-end Developer</span>
+		</InspireLampEffect> -->
+
+		<!-- <InspireAuroraBackground class="top-[-4rem]">
 			<div
 				v-motion
 				:initial="{ opacity: 0, y: 40 }"
@@ -23,26 +46,30 @@
 				</div>
 				<InspireInteractiveButton />
 			</div>
-		</InspireAuroraBackground>
-		<UiContainer>
+		</InspireAuroraBackground> -->
+
+		
+
+
+		<!-- <UiContainer>
 			<NotivuePage />
 			<UiGradientDivider class="container my-7" />
-		</UiContainer>
+		</UiContainer> -->
 		<div class="container mx-auto p-8">
-			<h1 class="mb-8 text-3xl font-bold">{{ $t("inspireExamples") }}:</h1>
+			<!-- <h1 class="mb-8 text-3xl font-bold">{{ $t("inspireExamples") }}:</h1> -->
 
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 				<!-- Basic usage -->
-				<InspireDirectionAwareHover
+				<!-- <InspireDirectionAwareHover
 					image-url="https://images.unsplash.com/photo-1728755833852-2c138c84cfb1?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					class="shadow-lg"
 				>
 					<h2 class="text-xl font-semibold">Beautiful Landscape</h2>
 					<p class="mt-2">Discover nature's wonders</p>
-				</InspireDirectionAwareHover>
+				</InspireDirectionAwareHover> -->
 
 				<!-- Custom styling -->
-				<InspireDirectionAwareHover
+				<!-- <InspireDirectionAwareHover
 					image-url="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
 					class="border-4 border-primary"
 					image-class="scale-100 hover:scale-110"
@@ -50,28 +77,28 @@
 				>
 					<h2 class="text-xl font-semibold">Urban Adventure</h2>
 					<p class="mt-2">Explore the city lights</p>
-				</InspireDirectionAwareHover>
+				</InspireDirectionAwareHover> -->
 
 				<!-- With button -->
-				<InspireDirectionAwareHover
+				<!-- <InspireDirectionAwareHover
 					image-url="https://images.unsplash.com/photo-1664710476481-1213c456c56c?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					class="overflow-hidden rounded-xl shadow-xl"
 				>
 					<h2 class="text-xl font-semibold">Culinary Delights</h2>
 					<p class="mt-2">Savor exquisite flavors</p>
 					<button class="mt-4 rounded bg-white px-4 py-2 text-black">View Recipe</button>
-				</InspireDirectionAwareHover>
+				</InspireDirectionAwareHover> -->
 			</div>
 		</div>
-		<div class="flex h-[40rem] flex-col items-center justify-center px-4">
+		<!-- <div class="flex h-[40rem] flex-col items-center justify-center px-4">
 			<h2 class="mb-10 text-center text-xl text-black dark:text-white sm:mb-20 sm:text-5xl">
 				{{ $t("AskAnythingSilly") }}
 			</h2>
 			<InspireVanishingInput v-model="text" :placeholders="placeholders" />
-		</div>
-		<UiGradientDivider class="container my-7" />
+		</div> -->
+		<!-- <UiGradientDivider class="container my-7" /> -->
 
-		<UiContainer class="mb-60 mt-20">
+		<!-- <UiContainer class="mb-60 mt-20">
 			<h1 class="mb-8 text-3xl font-bold">{{ $t("UIThingExamples") }}:</h1>
 
 			<UiContextMenu>
@@ -130,20 +157,20 @@
 					</UiContextMenuRadioGroup>
 				</UiContextMenuContent>
 			</UiContextMenu>
-		</UiContainer>
+		</UiContainer> -->
 	</div>
 </template>
 
 <script lang="ts" setup>
-	const placeholders = [
-		"Why is my code always broken?",
-		"What does 'undefined' even mean?",
-		"How to center a div (for real this time)",
-		"Am I smarter than a compiler?",
-		"Do loops ever get dizzy?",
-	];
-	const text = ref("");
-	const showBookmark = ref(true);
-	const showFullUrls = ref(false);
-	const person = ref("1");
+	// const placeholders = [
+	// 	"Why is my code always broken?",
+	// 	"What does 'undefined' even mean?",
+	// 	"How to center a div (for real this time)",
+	// 	"Am I smarter than a compiler?",
+	// 	"Do loops ever get dizzy?",
+	// ];
+	// const text = ref("");
+	// const showBookmark = ref(true);
+	// const showFullUrls = ref(false);
+	// const person = ref("1");
 </script>
